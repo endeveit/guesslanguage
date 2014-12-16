@@ -1,6 +1,8 @@
-# guesslanguage — Guess the natural language of a text in Go [![Build Status](https://travis-ci.org/endeveit/guesslanguage.svg?branch=master)](https://travis-ci.org/endeveit/guesslanguage)
+# guesslanguage [![Build Status](https://travis-ci.org/endeveit/guesslanguage.svg?branch=master)](https://travis-ci.org/endeveit/guesslanguage)
 
 This is a Go version of python [guess-language](http://code.google.com/p/guess-language>).
+
+guesslanguage provides a simple way to detect the natural language of unicode string and detects over 60 languages listed in the [models](https://github.com/endeveit/guesslanguage/tree/master/models) directory.
 
 ## Supported Go versions
 

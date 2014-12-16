@@ -60,7 +60,7 @@ func Test_GetOrderedModel(t *testing.T) {
 	}
 }
 
-func Test_GuessLanguage(t *testing.T) {
+func Test_Guess(t *testing.T) {
 	var (
 		err     error
 		guessed string
