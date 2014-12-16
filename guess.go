@@ -1,3 +1,8 @@
+// Package guesslanguage provides a simple way to detect language of unicode string.
+//
+// Source code and project home:
+// https://github.com/endeveit/guesslanguage
+//
 package guesslanguage
 
 import (
@@ -9,12 +14,12 @@ import (
 )
 
 var (
-	unknownLanguage string = "UNKNOWN"
 	regexWords      *regexp.Regexp
 	maxLength       int      = 4096
 	maxDistance     int      = maxLength * 300
 	minLength       int      = 20
 	maxGrams        int      = 300
+	unknownLanguage string   = "UNKNOWN"
 	codesBasicLatin []string = []string{
 		"ceb",
 		"en",
@@ -301,7 +306,7 @@ func Guess(text string) (result string, err error) {
 	return guessLanguage(words, getRuns(words)), nil
 }
 
-// Return the language ID.
+// Return the language IANA ID.
 func GuessId(text string) int {
 	code, err := Guess(text)
 
