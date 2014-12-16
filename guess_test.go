@@ -1,7 +1,7 @@
 package guesslanguage
 
 import (
-	"./models"
+	"github.com/endeveit/guesslanguage/models"
 	"strings"
 	"testing"
 )

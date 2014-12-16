@@ -1,8 +1,8 @@
 package guesslanguage
 
 import (
-	"./models"
 	"errors"
+	"github.com/endeveit/guesslanguage/models"
 	"regexp"
 	"strings"
 	"unicode/utf8"
