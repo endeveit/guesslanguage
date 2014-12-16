@@ -1,6 +1,10 @@
-# Guess the natural language of a text
+# guesslanguage — Guess the natural language of a text in Go [![Build Status](https://travis-ci.org/endeveit/guesslanguage.svg?branch=master)](https://travis-ci.org/endeveit/guesslanguage)
 
 This is a Go version of python [guess-language](http://code.google.com/p/guess-language>).
+
+## Supported Go versions
+
+guesslanguage is regularly tested against Go 1.1, 1.2, 1.3 and tip.
 
 ## Usage
 
