@@ -7,17 +7,18 @@ package guesslanguage
 
 import (
 	"errors"
-	"github.com/endeveit/guesslanguage/models"
 	"regexp"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/endeveit/guesslanguage/models"
 )
 
 var (
 	regexWords      *regexp.Regexp
 	maxLength       int      = 4096
 	maxDistance     int      = maxLength * 300
-	minLength       int      = 20
+	minLength       int      = 4
 	maxGrams        int      = 300
 	unknownLanguage string   = "UNKNOWN"
 	codesBasicLatin []string = []string{
