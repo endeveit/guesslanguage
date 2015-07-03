@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/endeveit/guesslanguage/models"
+	"github.com/bountylabs/guesslanguage/models"
 )
 
 var (
