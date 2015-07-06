@@ -1,5 +1,7 @@
 package guesslanguage
 
+import "github.com/bountylabs/log"
+
 var (
 	blockRshift uint     = 4
 	blocks      []string = make([]string, 0x2fa2)
@@ -170,5 +172,10 @@ func getRepeated(name string, nbRepeats int) (result []string) {
 
 // Returns block name related to the char
 func getBlock(char int32) string {
+	defer func() {
+		if err := recover(); err != nil {
+			log.Infof("Encountered an invalid character in guesslanguage %d", char)
+		}
+	}()
 	return blocks[int(char)>>blockRshift]
 }
