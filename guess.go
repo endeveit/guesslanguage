@@ -18,7 +18,7 @@ var (
 	regexWords      *regexp.Regexp
 	maxLength       int      = 4096
 	maxDistance     int      = maxLength * 300
-	minLength       int      = 10
+	minLength       int      = 20
 	maxGrams        int      = 300
 	unknownLanguage string   = "UNKNOWN"
 	codesBasicLatin []string = []string{
