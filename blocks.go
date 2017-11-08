@@ -1,6 +1,6 @@
 package guesslanguage
 
-import "github.com/bountylabs/log"
+import "github.com/bountylabs/api_common/log"
 
 var (
 	blockRshift uint     = 4
