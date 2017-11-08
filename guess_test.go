@@ -1,9 +1,10 @@
 package guesslanguage
 
 import (
-	"github.com/endeveit/guesslanguage/models"
 	"strings"
 	"testing"
+
+	"github.com/bountylabs/guesslanguage/models"
 )
 
 func Test_getRuns(t *testing.T) {

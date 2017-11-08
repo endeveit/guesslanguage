@@ -7,10 +7,11 @@ package guesslanguage
 
 import (
 	"errors"
-	"github.com/endeveit/guesslanguage/models"
 	"regexp"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/bountylabs/guesslanguage/models"
 )
 
 var (
